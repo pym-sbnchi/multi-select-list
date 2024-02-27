@@ -1,0 +1,16 @@
+.selectBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.selectInp{
+    width: 50%;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    text-align: center;
+}
