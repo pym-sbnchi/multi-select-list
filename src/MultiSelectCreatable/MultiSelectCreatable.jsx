@@ -1,22 +1,25 @@
-import React from "react";
-import "./index.css";
+import React, { useState } from "react";
+import "./index.scss";
 
 export default function MultiSelectCreatable() {
   const options = [
+    { value: "", label: "Select one..." },
     { value: "sport", label: "Sport" },
     { value: "game", label: "Game" },
     { value: "science", label: "Science" },
     { value: "art", label: "Art" },
     { value: "education", label: "Education" },
     { value: "health", label: "Health" },
+    { value: "vacation", label: "Vacation" },
   ];
-  const handleChange = (selectedOptions) => {
-    console.log(selectedOptions);
-  };
+
   return (
     <>
       <div className="selectBox">
-        <select name="" id="" className="selectInp">
+        <h5 className="title">
+          Creatable multi-select dropdown list <br /> without any library
+        </h5>
+        <select className="selectInput">
           {options.map((option, index) => (
             <option key={index} value={option.value}>
               {option.label}

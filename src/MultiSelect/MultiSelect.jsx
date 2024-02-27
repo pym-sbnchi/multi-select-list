@@ -1,5 +1,5 @@
 import React from "react";
-import './index.css'
+import './index.scss'
 import CreatableSelect from "react-select/creatable";
 
 export default function MultiSelect() {

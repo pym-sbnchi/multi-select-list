@@ -1,0 +1,12 @@
+$border: #999;
+$text: #666;
+
+.selectInput {
+  width: 50%;
+  padding: 10px 5px;
+  border: 0.05em solid $border;
+  border-radius: 0.35em;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $text;
+}
