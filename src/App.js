@@ -1,12 +1,12 @@
-import './App.css';
-import MultiSelectCreatable from './MultiSelectCreatable/MultiSelectCreatable';
-import MultiSelect from './MultiSelect/MultiSelect';
+import "./App.css";
+import MultiSelectCreatableWithLibrary from "./WithLibrary/MultiSelectCreatableWithLibrary";
+import MultiSelectCreatableWithoutLibrary from "./WithoutLibrary/MultiSelectCreatableWithoutLibrary";
 
 function App() {
   return (
     <>
-    <MultiSelect/>
-    <MultiSelectCreatable/>
+      <MultiSelectCreatableWithLibrary />
+      <MultiSelectCreatableWithoutLibrary />
     </>
   );
 }

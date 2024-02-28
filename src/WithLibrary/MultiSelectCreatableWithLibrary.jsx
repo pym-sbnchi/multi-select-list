@@ -2,7 +2,7 @@ import React from "react";
 import './index.scss'
 import CreatableSelect from "react-select/creatable";
 
-export default function MultiSelect() {
+export default function MultiSelectCreatableWithLibrary() {
   const options = [
     { value: "sport", label: "Sport" },
     { value: "game", label: "Game" },

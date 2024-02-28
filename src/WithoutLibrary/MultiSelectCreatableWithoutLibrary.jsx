@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./index.scss";
 
-export default function MultiSelectCreatable() {
+export default function MultiSelectCreatableWithoutLibrary() {
   const options = [
     { value: "sport", label: "Sport" },
     { value: "game", label: "Game" },
@@ -37,7 +37,7 @@ export default function MultiSelectCreatable() {
           Creatable multi-select dropdown list <br /> without any library
         </h5>
         <div className="placeBox">
-          <div className="inpBox">
+          <div className="inpBox" >
             {selectedOption &&
               selectedOption.map((option, index) => (
                 <button key={index}>
