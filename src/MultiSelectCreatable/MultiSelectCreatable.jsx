@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./index.scss";
 
 export default function MultiSelectCreatable() {
@@ -20,11 +20,9 @@ export default function MultiSelectCreatable() {
     setSelectedOption([]);
   };
 
-  // function handleBtnCross() {
-  //   setSelectedOption((x) => {
-  //     return x.filter((index) => selectedOption.index !== index);
-  //   });
-  // }
+  const handleBtnCross = (option) => {
+    setSelectedOption(selectedOption.filter((i) => i !== option));
+  };
 
   window.addEventListener("click", (e) => {
     if (!e.target.closest(".inp")) {
@@ -41,10 +39,15 @@ export default function MultiSelectCreatable() {
         <div className="placeBox">
           <div className="inpBox">
             {selectedOption &&
-              selectedOption.map((x, index) => (
+              selectedOption.map((option, index) => (
                 <button key={index}>
-                  {x}
-                  <span className="cross">&times;</span>
+                  {option}
+                  <span
+                    className="cross"
+                    onClick={() => handleBtnCross(option)}
+                  >
+                    &times;
+                  </span>
                 </button>
               ))}
             <input
