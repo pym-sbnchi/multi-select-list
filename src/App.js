@@ -1,4 +1,3 @@
-import "./App.css";
 import MultiSelectCreatableWithLibrary from "./WithLibrary/MultiSelectCreatableWithLibrary";
 import MultiSelectCreatableWithoutLibrary from "./WithoutLibrary/MultiSelectCreatableWithoutLibrary";
 
